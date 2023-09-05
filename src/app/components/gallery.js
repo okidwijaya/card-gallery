@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import PlaceholderImage from "../../assets/image/placeholder-square.jpg"
+import angular from"../../assets/image/angular.svg";
+import react from"../../assets/image/react.svg";
 
 const Gallery = () => {
   return (
@@ -8,55 +10,28 @@ const Gallery = () => {
       <div className="max-w-screen-md h-auto mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 rounded-md">
         <div className="grid gap-4 h-fit">
           <div className="h-max">
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <Link href="#">
-                <Image
-                  className="rounded-t-lg h-[180px] object-cover"
-                  width={300}
-                  height={350}
-                  src={PlaceholderImage}
-                  alt=""
-                />
-              </Link>
-              <div className="p-5">
-                <Link href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                </Link>
-                <Link
-                  href="#"
-                  className="inline-flex items-center px-3 py-1 text-sm font-medium text-center text-slate-900 bg-slate-300 rounded"
-                >
-                  Read more
-                  <svg
-                    className="w-3.5 h-3.5 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+          <Link
+              href="/dawn"
+              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-stone-600">
+                NextJs 13 version
+              </h5>
+              <p className="mb-3 text-gray-700 dark:text-slate-400 font-thin font-oxygen-font">
+                Here are the biggest enterprise technology acquisitions of 2021 so
+                far, in reverse chronological order.
+              </p>
+            </Link>
           </div>
           <div className="h-max">
             <Link
               href="/"
-              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
             >
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-stone-600">
                 Noteworthy technology acquisitions 2021
               </h5>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 text-gray-700 dark:text-slate-400 font-thin font-oxygen-font">
                 Here are the biggest enterprise technology acquisitions of 2021 so
                 far, in reverse chronological order.
               </p>
@@ -67,22 +42,10 @@ const Gallery = () => {
           <div className="h-max">
             <Link
               href="/"
-              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
             >
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-            </Link>
-          </div>
-          <div className="h-max">
-            <Link
-              href="/"
-              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-            >
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <Image alt="angular" src={react} width={214} height={214} />
+              <p className="mt-3 mb-3 font-light font-oxygen-font text-gray-700 dark:text-slate-400">
                 Here are the biggest enterprise technology acquisitions of 2021 so
                 far, in reverse chronological order.
               </p>
@@ -91,11 +54,13 @@ const Gallery = () => {
           <div className="h-max">
             <Link
               href="/"
-              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
             >
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
+              <Image alt="angular" src={angular} width={214} height={214} />
+              <p className="mb-3 text-gray-700 dark:text-slate-400 font-thin font-oxygen-font">
+                Here are the biggest enterprise technology acquisitions of 2021 so
+                far, in reverse chronological order.
+              </p>
             </Link>
           </div>
         </div>
@@ -103,57 +68,30 @@ const Gallery = () => {
           <div className="h-max">
             <Link
               href="/"
-              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
             >
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-stone-600">
                 Noteworthy technology acquisitions 2021
               </h5>
             </Link>
           </div>
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <Link href="#">
-              <Image
-                className="rounded-t-lg h-[310px] object-cover"
-                width={500}
-                height={800}
-                src={PlaceholderImage}
-                alt=""
-              />
-            </Link>
-            <div className="p-5">
-              <Link href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </Link>
-              <Link
-                href="#"
-                className="inline-flex items-center px-3 py-1 text-sm font-medium text-center text-slate-900 bg-slate-300 rounded"
-              >
-                Read more
-                <svg
-                  className="w-3.5 h-3.5 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </Link>
-            </div>
-          </div>
+          <Link
+              href="/"
+              className="h-max block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-stone-600">
+                Noteworthy technology acquisitions 2021
+              </h5>
+              <p className="mb-3 text-gray-700 dark:text-slate-400 font-thin font-oxygen-font">
+                Here are the biggest enterprise technology acquisitions of 2021 so
+                far, in reverse chronological order.
+              </p>
+          </Link>
         </div>
       </div>
       {/* <Link
         href="#"
-        className="w-full flex flex-col mt-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        className="w-full flex flex-col mt-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  -gray-800 dark:hover:bg-gray-700"
       >
         <Image
           className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -163,10 +101,10 @@ const Gallery = () => {
           alt="image alt"
         />
         <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-stone-600">
             Noteworthy technology acquisitions 2021
           </h5>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 text-gray-700 dark:text-slate-400 font-thin font-oxygen-font">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
           </p>

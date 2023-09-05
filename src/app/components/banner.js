@@ -5,21 +5,21 @@ import Link from 'next/link';
 
 const Banner = () => {
     return ( 
-        <div className="w-full h-screen flex justify-center items-start py-2 pl-3 flex-col">
+        <div className="w-full lg:h-[750px] md:h-auto sm:h-auto md:mb-10 sm:mb-10 flex justify-center items-start py-2 px-5 flex-col lg:sticky lg:top-8 ml-4 rounded-lg">
             <p className="w-96 h-auto text-xs font-light text-left text-slate-300 font-oxygen-font pl-2">Hello,</p>
-            <p className="w-96 h-auto text-8xl font-bold text-left text-slate-300 rounded font-oxygen-font">
+            <h1 className="w-96 h-auto lg:text-8xl md:text-base font-bold text-left text-yellow-custom rounded font-oxygen-font">
                 Oki Dwijaya Afiq Rahmansah
-            </p>
+            </h1>
             <p className="pl-2 font-oxygen-font font-light">I am a Fullstack Developer</p>
-            <div className="flex items-center justify-center flex-row w-60 mx-auto my-6 gap-4">
+            <div className="flex items-start justify-start flex-row w-96 mx-0 my-6 gap-4">
                 <Link href="/">
-                    <ImLinkedin className="h-9 w-9" />
+                    <ImLinkedin className="h-9 w-9 text-slate-300" />
                 </Link>
                 <Link href="/">
-                    <FaSquareGithub className="h-10 w-10" />
+                    <FaSquareGithub className="h-10 w-10 text-slate-300" />
                 </Link>
                 <Link href="/">
-                    <FaInstagramSquare className="h-10 w-10" />
+                    <FaInstagramSquare className="h-10 w-10 text-slate-300" />
                 </Link>
             </div>
         </div>
